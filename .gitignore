@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# Donnees de l'utilisateur, creees a l'execution
+moteur/config.json
+moteur/*.log
+moteur/*.jsonl
+moteur/whitelist.tessconfig

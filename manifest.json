@@ -1,0 +1,17 @@
+{
+  "id": "cout-plats",
+  "name": "Coût des plats",
+  "icon": "hammer",
+  "category": "games",
+  "subcategory": "Restauration",
+  "version": "1.0.8",
+  "description": "Cout reel des plats par lecture du chat (OCR), liste d'achats, catalogue de recettes.",
+  "entry": "index.js",
+  "style": "style.css",
+  "port": 8000,
+  "launch": {
+    "command": "pythonw",
+    "args": ["serveur.py", "--quitter-sans-hub"],
+    "cwd": "moteur"
+  }
+}

@@ -1,0 +1,6 @@
+mss>=9.0
+pytesseract>=0.3.10
+Pillow>=10.0
+rapidfuzz>=3.6
+requests>=2.31
+websockets>=13

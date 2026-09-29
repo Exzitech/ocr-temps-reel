@@ -1,0 +1,47 @@
+{
+  "_commentaire": "Copiez-moi en config.json (ou lancez serveur.py, il le cree tout seul). zone = pixels absolus du fil de commandes ; reglez-la au bouton 'Zone de capture' d'ExziHub ou avec selecteur_zone.py. zone_rapide (optionnelle, bouton 'Zone rapide') : petite zone sur les dernieres lignes, lue a interval_s ; si elle est definie, 'zone' devient un filet de securite relu seulement toutes les interval_securite_s pour rattraper une rafale d'achats.",
+  "tesseract_cmd": "",
+  "capture": {
+    "monitor": 1,
+    "zone": {
+      "left": 20,
+      "top": 780,
+      "width": 900,
+      "height": 260
+    },
+    "zone_rapide": null,
+    "interval_s": 0.4,
+    "interval_securite_s": 2.0,
+    "queue_maxsize": 4
+  },
+  "ocr": {
+    "lang": "fra",
+    "psm": 6,
+    "whitelist": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZàâäçèéêëîïôöùûüœæÀÂÄÇÈÉÊËÎÏÔÖÙÛÜŒÆ[]()x:'’ -,.+",
+    "upscale": 2,
+    "tessdata_dir": ""
+  },
+  "matching": {
+    "seuil_auto": 90,
+    "seuil_confirmation": 70
+  },
+  "vente": {
+    "taxe_pourcent": 2.0
+  },
+  "session": {
+    "max_items": 20,
+    "items_par_defaut": []
+  },
+  "ui": {
+    "refresh_ms": 300,
+    "topmost": true
+  },
+  "serveur": {
+    "hote": "localhost",
+    "port": 8000
+  },
+  "log": {
+    "fichier": "cout-plats.log",
+    "niveau": "INFO"
+  }
+}
